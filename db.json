@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "name": "Honda 11123",
+      "tahun": 2000,
+      "cc": 900,
+      "made": "Jepang",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/800px-Honda_Logo.svg.png",
+      "id": 0
+    },
+    {
+      "id": 2,
+      "name": "Suzuki",
+      "tahun": 2002,
+      "cc": 1000,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/800px-Honda_Logo.svg.png",
+      "made": "Indonesia"
+    },
+    {
+      "name": "Bajaj",
+      "tahun": 2000,
+      "cc": 1100,
+      "made": "India",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/800px-Honda_Logo.svg.png",
+      "id": 3
+    }
+  ],
+  "mobils": [
+    {
+      "id": 100,
+      "name": "Honda",
+      "tahun": 2000,
+      "cc": 1900,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/800px-Honda_Logo.svg.png",
+      "made": "Jepang"
+    },
+    {
+      "name": "Yamaha 125",
+      "tahun": 2001,
+      "cc": 1800,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/800px-Honda_Logo.svg.png",
+      "made": "China",
+      "id": 101
+    },
+    {
+      "id": 102,
+      "name": "Suzuki",
+      "tahun": 2002,
+      "cc": 1000,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/800px-Honda_Logo.svg.png",
+      "made": "Indonesia"
+    },
+    {
+      "id": 103,
+      "name": "Bajaj",
+      "tahun": 2000,
+      "cc": 1100,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Honda_Logo.svg/800px-Honda_Logo.svg.png",
+      "made": "India"
+    },
+    {
+      "id": 104,
+      "name": "Ferarri",
+      "tahun": "2021"
+    }
+  ]
+}
