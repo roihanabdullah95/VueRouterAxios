@@ -1,25 +1,28 @@
 <template>
   <div>
+    <!-- <Login /> -->
     <!-- <Navbar /> -->
     <div class="sidebar">
-      <SideBar />
+      <SideBar v-if="navbar" />
       <div class="routerview">
-        <router-view />
+        <router-view @toggleBar="() => (navbar = !navbar)" />
       </div>
     </div>
-    <!-- <Data /> -->
   </div>
 </template>
 <script>
-// import Data from "./components/Data.vue";
-// import Navbar from "@/components/Navbar.vue";
 import SideBar from "@/components/Sidebar.vue";
+// import Login from "@/components/Login.vue";
 export default {
   name: "App",
   components: {
-    // Data,
-    // Navbar,
     SideBar,
+    // Login,
+  },
+  data() {
+    return {
+      navbar: true,
+    };
   },
 };
 </script>

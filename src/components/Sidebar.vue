@@ -16,8 +16,10 @@
       <nav id="sidebar">
         <div class="title">Side Menu</div>
         <ul class="list-items">
-          <li>
-            <router-link to="/"><i class="fas fa-home"></i> Home</router-link>
+          <li v-if="userRole === 'siswa'">
+            <router-link to="/home"
+              ><i class="fas fa-home"></i> Home</router-link
+            >
           </li>
           <li>
             <router-link to="/about"

@@ -63,5 +63,43 @@
       "name": "Ferarri",
       "tahun": "2021"
     }
+  ],
+  "akuns": [
+    {
+      "id": 1,
+      "username": "admin",
+      "passowrd": "123",
+      "role": "admin"
+    },
+    {
+      "username": "Roihan",
+      "password": "12345678",
+      "role": "siswa",
+      "id": 2
+    },
+    {
+      "username": "User",
+      "password": "user",
+      "role": "siswa",
+      "id": 3
+    },
+    {
+      "username": "Coba",
+      "password": "1234",
+      "role": "siswa",
+      "id": 4
+    },
+    {
+      "username": "Budi",
+      "password": "123",
+      "role": "siswa",
+      "id": 5
+    },
+    {
+      "username": "Andi",
+      "password": "123",
+      "role": "siswa",
+      "id": 6
+    }
   ]
 }

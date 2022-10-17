@@ -2,7 +2,14 @@
   <div>
     <div class="title">
       <h1>About</h1>
-      <a href=""><i class="fas fa-sign-out-alt"></i> Log-out</a>
+      <a
+        class="btn btn-outline-danger my-2 my-sm-0"
+        style="margin-left: 830px"
+        @click="out"
+        href="/"
+      >
+        <i class="fas fa-sign-out-alt"></i>Logout</a
+      >
     </div>
     <form @submit.prevent="addMobil">
       <input type="hidden" v-model="formMobil.id" />
@@ -47,6 +54,9 @@ export default {
   },
   mounted() {
     this.loadMobil();
+    if (!sessionStorage.getItem("USER_DATA")) {
+      this.$router.push("/");
+    }
   },
   methods: {
     loadMobil() {
@@ -107,6 +117,10 @@ export default {
         let index = this.mobils.indexOf(formMobil.name, formMobil.tahun);
         this.mobils.splice(index, 1);
       });
+    },
+    out() {
+      sessionStorage.clear();
+      this.$router.push("/");
     },
   },
 };

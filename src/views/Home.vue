@@ -2,7 +2,14 @@
   <div class="all">
     <div class="title">
       <h1>Home</h1>
-      <a href=""><i class="fas fa-sign-out-alt"></i> Log-out</a>
+      <a
+        class="btn btn-outline-danger my-2 my-sm-0"
+        style="margin-left: 830px"
+        @click="out"
+        href="/"
+      >
+        <i class="fas fa-sign-out-alt"></i>Logout</a
+      >
     </div>
     <form @submit.prevent="add">
       <input type="hidden" v-model="form.id" required />
@@ -77,6 +84,7 @@
 <script>
 /* eslint-disable */
 import axios from "axios";
+
 export default {
   name: "HomeR",
   data() {
@@ -101,6 +109,9 @@ export default {
     };
   },
   mounted() {
+    if (!sessionStorage.getItem("USER_DATA")) {
+      this.$router.push("/");
+    }
     this.load();
     this.loadMobil();
   },
@@ -229,6 +240,10 @@ export default {
         let index = this.mobils.indexOf(formMobil.name, formMobil.tahun);
         this.mobils.splice(index, 1);
       });
+    },
+    out() {
+      sessionStorage.clear();
+      this.$router.push("/");
     },
   },
 };
